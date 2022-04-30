@@ -1,30 +1,78 @@
-.score{
-    font-size: 50px;
 
+.score {
+    font-size: 50px;
+    height: 70px;
 }
 
-.score5{
+.score5 {
     color: red;
     font-size: 50px;
+    height: 70px;
 }
 
-.error{
+.error {
     color: red;
     font-size: 30px;
+    height: 70px;
 }
 
-.error2{
+.error2 {
     font-size: 30px;
     color: #4c51f9;
+    height: 70px;
 }
 
-.counter{
-    margin: auto;
+.block {
+
+    margin: 20px auto auto;
     width: 400px;
-    height: auto;
+    height: 150px;
     padding: 10px;
     border-style: outset;
     background-color: aliceblue;
     border-radius: 10px;
 }
 
+.msScore {
+    margin: 5px;
+
+    font-weight: bold;
+}
+
+
+.block input {
+    padding: 0 5px;
+    margin: 3px 3px 3px 10px;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    height: 30px;
+    width: 50px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    transition: box-shadow 0.2s;
+}
+
+.block input:focus-visible {
+    border: 1px solid #4c51f9;
+    outline: none;
+}
+
+.block input:hover {
+    transition: all 0.2s;
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+
+.block input:disabled {
+    background-color: #eee;
+    border-color: #eee;
+    color: #444;
+
+}
