@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import {Counter} from "./Counter/Counter";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+    const [score, setScore] = useState<number>(0)
+
+
+    const addScore = () => {
+        setScore(score + 1)
+    }
+
+    const resetScore = () => {
+        setScore(0)
+    }
+
+    const addStartScore = (startScore: number) => {
+        setScore(startScore)
+    }
+
+
+    return (
+        <div className="App">
+            <Counter score={score}
+                     addScore={addScore}
+                     resetScore={resetScore}
+                     addStartScore={addStartScore}
+            />
+
+
+        </div>
+    );
 }
 
 export default App;

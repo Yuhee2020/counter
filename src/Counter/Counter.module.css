@@ -1,0 +1,30 @@
+.score{
+    font-size: 50px;
+
+}
+
+.score5{
+    color: red;
+    font-size: 50px;
+}
+
+.error{
+    color: red;
+    font-size: 30px;
+}
+
+.error2{
+    font-size: 30px;
+    color: #4c51f9;
+}
+
+.counter{
+    margin: auto;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    border-style: outset;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
